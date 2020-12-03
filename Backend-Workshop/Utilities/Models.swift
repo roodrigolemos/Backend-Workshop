@@ -15,3 +15,7 @@ struct Character: Decodable {
     let skinColor: String?
     let homeworld: String?
 }
+struct Search: Decodable {
+    let count: Int?
+    let results : [Character]
+}
