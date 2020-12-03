@@ -8,34 +8,33 @@
 import Foundation
 import UIKit
 
-struct WebsiteDescription: Decodable {
-    let name: String
-    let description: String
-    let courses: [Course]
-}
-
-struct Course: Decodable {
-    let id: Int?
-    let name: String?
-    let link: String?
-    let imageUrl: String?
+func apiCode() {
     
-//    init(json: [String: Any]) {
-//        id = json["id"] as? Int ?? -1
-//        name = json["name"] as? String ?? ""
-//        link = json["link"] as? String ?? ""
-//        imageUrl = json["imageUrl"] as? String ?? ""
-//    }
+    // 1 - pega o endereço da url
+    let urlString = "endereco de alguma api"
+    
+    // 2 - Cast esse endereço em um URL
+    let url = URL(string: urlString)
+    
+    // 3 - Unwrap o optional
+    guard let urlSafe = url else { return }
+    
+    // 4 - Cria uma session
+    let session = URLSession.shared
+    
+    // 5 - Cria a task
+    let dataTask = session.dataTask(with: urlSafe) { (data, response, error) in
+        
+        if error == nil && data != nil {
+            let decoder = JSONDecoder()
+            do {
+                let newsFeed = try decoder.decode("tipoDoDado".self, from: data!)
+            } catch {
+                print("Error in JSON Parsing")
+            }
+        }
+    }
+    
+    // 6 - Faz a chamada da api
+    dataTask.resume()
 }
-
-let validDictionary = [
-    "numericalValue": 1,
-    "stringValue": "JSON",
-    "arrayValue": [0, 1, 2, 3, 4, 5]
-] as [String : Any]
- 
-let invalidDictionary = [
-    "date": NSDate()
-]
- 
-
