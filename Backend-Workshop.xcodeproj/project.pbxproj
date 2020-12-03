@@ -63,6 +63,11 @@
 				B7B178822578341000D9CD28 /* View */,
 				B7B178812578340800D9CD28 /* Controller */,
 				B7B178772578314000D9CD28 /* Info.plist */,
+				B7B1786F2578313F00D9CD28 /* Main.storyboard */,
+				B7B178742578314000D9CD28 /* LaunchScreen.storyboard */,
+				B7B178722578314000D9CD28 /* Assets.xcassets */,
+				B7B1786B2578313F00D9CD28 /* SceneDelegate.swift */,
+				B7B178692578313F00D9CD28 /* AppDelegate.swift */,
 			);
 			path = "Backend-Workshop";
 			sourceTree = "<group>";
@@ -78,9 +83,6 @@
 		B7B178822578341000D9CD28 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B7B178722578314000D9CD28 /* Assets.xcassets */,
-				B7B178742578314000D9CD28 /* LaunchScreen.storyboard */,
-				B7B1786F2578313F00D9CD28 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,8 +90,6 @@
 		B7B178832578341500D9CD28 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B7B178692578313F00D9CD28 /* AppDelegate.swift */,
-				B7B1786B2578313F00D9CD28 /* SceneDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
