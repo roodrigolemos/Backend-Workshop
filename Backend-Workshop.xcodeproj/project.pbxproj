@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A867293B2579725400644774 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A867293A2579725400644774 /* Models.swift */; };
 		B7B1786A2578313F00D9CD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B178692578313F00D9CD28 /* AppDelegate.swift */; };
 		B7B1786C2578313F00D9CD28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B1786B2578313F00D9CD28 /* SceneDelegate.swift */; };
 		B7B178712578313F00D9CD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B1786F2578313F00D9CD28 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A867293A2579725400644774 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B7B178662578313F00D9CD28 /* Backend-Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Backend-Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B178692578313F00D9CD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7B1786B2578313F00D9CD28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B178852578343000D9CD28 /* BackendFunctions.swift */,
+				A867293A2579725400644774 /* Models.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				B7B1786A2578313F00D9CD28 /* AppDelegate.swift in Sources */,
 				B7B178862578343000D9CD28 /* BackendFunctions.swift in Sources */,
 				B7B1786C2578313F00D9CD28 /* SceneDelegate.swift in Sources */,
+				A867293B2579725400644774 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
