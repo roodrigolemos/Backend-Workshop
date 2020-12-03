@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Course: Decodable {
+struct Character: Decodable {
     let name: String?
     let birthYear: String?
     let eyeColor: String?
