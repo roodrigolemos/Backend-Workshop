@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Character: Decodable {
+struct starWarsCharacter: Codable {
     let name: String?
     let birthYear: String?
     let eyeColor: String?
@@ -15,7 +15,12 @@ struct Character: Decodable {
     let skinColor: String?
     let homeworld: String?
 }
-struct Search: Decodable {
+struct StartWarsSearch: Codable {
     let count: Int?
-    let results : [Character]
+    let results: [starWarsCharacter]
+}
+
+struct allPeopleStarWars: Codable {
+    let count: Int?
+    let results: [starWarsCharacter]
 }
