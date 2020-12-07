@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B7B178842578341C00D9CD28 /* Utilities */,
-				B7B178832578341500D9CD28 /* Model */,
-				B7B178822578341000D9CD28 /* View */,
+				B7B40EA5257EC18C000B939A /* Model */,
+				B7B40EA6257EC195000B939A /* View */,
 				B7B178812578340800D9CD28 /* Controller */,
 				B7B178772578314000D9CD28 /* Info.plist */,
 				B7B1786F2578313F00D9CD28 /* Main.storyboard */,
@@ -82,27 +82,27 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		B7B178822578341000D9CD28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B7B178832578341500D9CD28 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		B7B178842578341C00D9CD28 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				B7B178852578343000D9CD28 /* BackendFunctions.swift */,
-				A867293A2579725400644774 /* Models.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B7B40EA5257EC18C000B939A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A867293A2579725400644774 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7B40EA6257EC195000B939A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
