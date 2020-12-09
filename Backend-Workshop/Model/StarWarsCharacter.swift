@@ -7,6 +7,7 @@
 
 import Foundation
 
+// 1.5 - Depois que ver a documentação da API, cria o model de acordo com os dados do JSON que você quer pegar.
 struct StarWarsCharacter: Codable {
     let name: String?
     let birthYear: String?
