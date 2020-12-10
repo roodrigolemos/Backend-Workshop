@@ -41,13 +41,6 @@ class Network {
                     for character in starWarsCharacters {
                         print("\(character) \n\n")
                     }
-                    
-                    for character in starWarsCharacters {
-                        guard let name = character.name else { return }
-                        if name == "Darth Vader" {
-                            print("Vilão: \n \(character)")
-                        }
-                    }
                 } catch {
                     print("Error in JSON Parsing")
                 }
@@ -57,5 +50,3 @@ class Network {
         dataTask.resume()
     }
 }
-
-

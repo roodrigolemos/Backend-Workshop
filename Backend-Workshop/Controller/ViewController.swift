@@ -9,24 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var image1: UIImageView!
-    @IBOutlet weak var image2: UIImageView!
-    @IBOutlet weak var image3: UIImageView!
-    
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var label3: UILabel!
-    
-    @IBOutlet weak var progressBar: UIProgressView!
-    
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var downloadButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupButton()
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
+    
+    @IBAction func downloadApi(_ sender: Any) {
         Network.shared.getData()
+    }
+}
+
+extension ViewController {
+    
+    func setupButton() {
+        downloadButton.backgroundColor = .clear
+        downloadButton.layer.cornerRadius = 5
+        downloadButton.layer.borderWidth = 2
+        downloadButton.layer.borderColor = UIColor.yellow.cgColor
+        downloadButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     }
 }
